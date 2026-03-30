@@ -5,74 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para Emelyn ❤️</title>
     <style>
-        body {
-            background: #fff5f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: 'Georgia', serif;
-            text-align: center;
-            padding: 20px;
+        /* Estilos generales y colores pastel */
+        body { 
+            background: #fff5f7; /* Fondo rosado muy pálido */
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            font-family: 'Georgia', serif; 
+            text-align: center; 
+            padding: 20px; 
         }
 
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(251, 182, 206, 0.6);
-            max-width: 450px;
-            border: 2px solid #f9a8d4;
+        /* La tarjeta de felicitación */
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 25px; 
+            box-shadow: 0 15px 35px rgba(251, 182, 206, 0.6); 
+            max-width: 480px; 
+            border: 2px solid #f9a8d4; 
         }
 
+        /* Tulipanes animados */
         .tulips { font-size: 50px; margin-bottom: 20px; }
+        .tulip-anim { display: inline-block; animation: sway 2.5s infinite ease-in-out; }
+        @keyframes sway { 0%, 100% { transform: translateY(0) rotate(-5deg); } 50% { transform: translateY(-15px) rotate(5deg); } }
 
-        .tulip-anim { 
-            display: inline-block; 
-            animation: sway 2.5s infinite ease-in-out; 
-        }
-
-        @keyframes sway { 
-            0%, 100% { transform: translateY(0) rotate(-5deg); } 
-            50% { transform: translateY(-15px) rotate(5deg); } 
-        }
-
+        /* El poema (Texto que subiste) */
         .poem { 
             font-style: italic; 
             color: #4b5563; 
             line-height: 1.8; 
-            font-size: 16px;
-            background: #fffafb;
-            padding: 20px;
-            border-radius: 15px;
-            border-left: 4px solid #f9a8d4;
-            margin-bottom: 20px;
+            font-size: 16px; 
+            background: #fffafb; 
+            padding: 20px; 
+            border-radius: 15px; 
+            border-left: 4px solid #f9a8d4; 
+            margin-bottom: 20px; 
         }
 
+        /* Galería de Fotografías (Tus fotos de Drive) */
+        .photo-gallery { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px; 
+            margin: 20px 0; 
+        }
+        
+        .photo-item { 
+            width: 100%; 
+            height: 120px; /* Altura de las fotos */
+            border-radius: 10px; 
+            overflow: hidden; 
+            border: 2px solid #f9a8d4; 
+        }
+        
+        .photo-item img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; /* Recorta la foto para que llene el espacio sin deformarse */
+        }
+
+        /* Títulos y firma */
         h1 { color: #db2777; font-family: 'Arial', sans-serif; font-size: 24px; margin: 15px 0; }
         .signature { color: #be185d; font-weight: bold; font-size: 18px; margin-bottom: 20px; }
 
         /* Contenedor del Video de YouTube */
-        .video-container {
-            position: relative;
+        .video-container { 
+            position: relative; 
             padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-            height: 0;
-            overflow: hidden;
-            border-radius: 15px;
-            background: #000;
-            margin-top: 20px;
+            height: 0; 
+            overflow: hidden; 
+            border-radius: 15px; 
+            background: #000; 
+            margin-top: 20px; 
+        }
+        
+        .video-container iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: 0; 
         }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
+        /* Instrucciones para la música */
         .instruction {
             font-size: 12px;
             color: #db2777;
@@ -103,16 +123,17 @@
             sino en el instante en que decide regalarlo."</p>
         </div>
 
+        <div class="photo-gallery">
+            <div class="photo-item"><img src="https://lh3.googleusercontent.com/u/0/d/TU_CODIGO_DE_DRIVE_AQUI" alt="Nuestra Foto 1"></div>
+            <div class="photo-item"><img src="http://googleusercontent.com/profile/picture/4" alt="Nuestra Foto 2"></div>
+            <div class="photo-item"><img src="http://googleusercontent.com/profile/picture/5" alt="Nuestra Foto 3"></div>
+        </div>
+
         <h1>¡Feliz Cumpleaños, Emelyn! 🎂</h1>
         <p class="signature">Te amo hoy y siempre. ❤️</p>
 
         <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/uZO-P4ukFxE" 
-                title="Gone, Gone, Gone - Phillip Phillips" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/uZO-P4ukFxE" allowfullscreen></iframe>
         </div>
         <p class="instruction">🎵 Dale play al video para escuchar nuestra canción ✨</p>
     </div>
