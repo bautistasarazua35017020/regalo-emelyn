@@ -5,139 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para Emelyn ❤️</title>
     <style>
-        body { 
-            background: #fff5f7; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh; 
-            margin: 0; 
-            font-family: 'Georgia', serif; 
-            text-align: center; 
-            padding: 20px; 
-        }
-
-        .card { 
-            background: white; 
-            padding: 30px; 
-            border-radius: 25px; 
-            box-shadow: 0 15px 35px rgba(251, 182, 206, 0.6); 
-            max-width: 450px; 
-            border: 2px solid #f9a8d4; 
-        }
-
+        body { background: #fff5f7; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; font-family: 'Georgia', serif; text-align: center; padding: 20px; }
+        .card { background: white; padding: 30px; border-radius: 25px; box-shadow: 0 15px 35px rgba(251, 182, 206, 0.6); max-width: 480px; border: 2px solid #f9a8d4; }
         .tulips { font-size: 50px; margin-bottom: 20px; }
-
-        .tulip-anim { 
-            display: inline-block; 
-            animation: sway 2.5s infinite ease-in-out; 
-        }
-
-        @keyframes sway { 
-            0%, 100% { transform: translateY(0) rotate(-5deg); } 
-            50% { transform: translateY(-15px) rotate(5deg); } 
-        }
-
-        .poem { 
-            font-style: italic; 
-            color: #4b5563; 
-            line-height: 1.8; 
-            font-size: 16px; 
-            background: #fffafb; 
-            padding: 20px; 
-            border-radius: 15px; 
-            border-left: 4px solid #f9a8d4; 
-            margin-bottom: 20px; 
-        }
-
+        .tulip-anim { display: inline-block; animation: sway 2.5s infinite ease-in-out; }
+        @keyframes sway { 0%, 100% { transform: translateY(0) rotate(-5deg); } 50% { transform: translateY(-15px) rotate(5deg); } }
+        .poem { font-style: italic; color: #4b5563; line-height: 1.8; font-size: 16px; background: #fffafb; padding: 20px; border-radius: 15px; border-left: 4px solid #f9a8d4; margin-bottom: 20px; }
+        
         /* Galería de fotos con links directos corregidos */
-        .photo-gallery { 
-            display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
-            gap: 10px; 
-            margin: 20px 0; 
-        }
-        
-        .photo-item { 
-            width: 100%; 
-            height: 120px; 
-            border-radius: 10px; 
-            overflow: hidden; 
-            border: 2px solid #f9a8d4; 
-            background: #fdf2f8; 
-        }
-        
-        .photo-item img { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover; 
-        }
+        .photo-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; }
+        .photo-item { width: 100%; height: 120px; border-radius: 10px; overflow: hidden; border: 2px solid #f9a8d4; background: #fdf2f8; }
+        .photo-item img { width: 100%; height: 100%; object-fit: cover; }
 
         h1 { color: #db2777; font-family: 'Arial', sans-serif; font-size: 24px; margin: 15px 0; }
-        .signature { color: #be185d; font-weight: bold; font-size: 18px; margin-bottom: 20px; }
+        .signature { color: #be185d; font-weight: bold; font-size: 18px; margin-bottom: 10px; }
+        .music-text { color: #db2777; font-weight: bold; margin-bottom: 15px; }
 
-        /* Contenedor del Video de YouTube */
-        .video-container { 
-            position: relative; 
-            padding-bottom: 56.25%; 
-            height: 0; 
-            overflow: hidden; 
-            border-radius: 15px; 
-            background: #000; 
-            margin-top: 20px; 
-        }
-        
-        .video-container iframe { 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            border: 0; 
-        }
-
-        .instruction {
-            font-size: 12px;
-            color: #db2777;
-            margin-top: 10px;
-            font-family: sans-serif;
-        }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; background: #000; margin-top: 10px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     </style>
 </head>
 <body>
-
     <div class="card">
         <div class="tulips">
-            <span class="tulip-anim">🌷</span>
-            <span class="tulip-anim" style="animation-delay: 0.4s;">🌷</span>
-            <span class="tulip-anim" style="animation-delay: 0.8s;">🌷</span>
+            <span class="tulip-anim">🌷</span><span class="tulip-anim" style="animation-delay: 0.4s;">🌷</span><span class="tulip-anim" style="animation-delay: 0.8s;">🌷</span>
         </div>
 
         <div class="poem">
-            <p>"Parece seria,<br>
-            como si llevara el mundo bien sujeto entre los labios.<br>
+            <p>"Parece seria,<br>como si llevara el mundo bien sujeto entre los labios.<br>
             Pero no te imaginas lo que ocurre cuando sonríe:<br>
-            se le desordena la calma,<br>
-            se le ilumina la cara como si alguien hubiera abierto<br>
+            se le desordena la calma,<br>se le ilumina la cara como si alguien hubiera abierto<br>
             una ventana por dentro."</p>
         </div>
 
         <div class="photo-gallery">
-            <div class="photo-item"><img src="https://lh3.googleusercontent.com/u/0/d/TU_CODIGO_DE_DRIVE_AQUI" alt="Nuestra Foto 1"></div>
-            <div class="photo-item"><img src="https://lh3.googleusercontent.com/d/ID_DE_LA_FOTO" alt="Nuevo Atardecer"></div>
-            <div class="photo-item"><img src="https://lh3.googleusercontent.com/d/1ofS779pPp51_MLcgxH20mr022pApMPKh" alt="Nuestra Foto 3"></div>
+            <div class="photo-item"><img src="https://lh3.googleusercontent.com/d/1DM35rOxY8YkJLBNCM1IAqS2mTOZrMv9y" alt="Atardecer"></div>
+            <div class="photo-item"><img src="https://lh3.googleusercontent.com/d/1ofS779pPp51_MLcgxH20mr022pApMPKh" alt="Foto 2"></div>
+            <div class="photo-item"><img src="https://lh3.googleusercontent.com/d/1FJbuKcue1Z9VhoSdMalL_lXso4rHOZVC" alt="Foto 3"></div>
         </div>
 
         <h1>¡Feliz Cumpleaños, Emelyn! 😍</h1>
         <p class="signature">I love you today and always ❤️</p>
-        <p class="signature"> Te dejo con nuestra canción 🎶</p>
-        
+        <p class="music-text">Te dejo con nuestra canción 🎵</p>
 
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/uZO-P4ukFxE" allowfullscreen></iframe>
         </div>
-        <p class="instruction">🎵 Dale play al video para nuestra canción ✨</p>
     </div>
-
 </body>
 </html>
