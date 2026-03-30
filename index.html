@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para Emelyn ❤️</title>
     <style>
-        /* Estilos generales y colores */
         body {
-            background: #fff5f7; /* Fondo rosado muy suave */
+            background: #fff5f7;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,7 +17,6 @@
             padding: 20px;
         }
 
-        /* La tarjeta de felicitación */
         .card {
             background: white;
             padding: 30px;
@@ -26,14 +24,9 @@
             box-shadow: 0 15px 35px rgba(251, 182, 206, 0.6);
             max-width: 450px;
             border: 2px solid #f9a8d4;
-            position: relative;
         }
 
-        /* Tulipanes animados */
-        .tulips { 
-            font-size: 50px; 
-            margin-bottom: 20px; 
-        }
+        .tulips { font-size: 50px; margin-bottom: 20px; }
 
         .tulip-anim { 
             display: inline-block; 
@@ -45,7 +38,6 @@
             50% { transform: translateY(-15px) rotate(5deg); } 
         }
 
-        /* El poema */
         .poem { 
             font-style: italic; 
             color: #4b5563; 
@@ -58,32 +50,33 @@
             margin-bottom: 20px;
         }
 
-        h1 { 
-            color: #db2777; 
-            font-family: 'Arial', sans-serif; 
-            font-size: 24px; 
-            margin: 15px 0; 
-        }
+        h1 { color: #db2777; font-family: 'Arial', sans-serif; font-size: 24px; margin: 15px 0; }
+        .signature { color: #be185d; font-weight: bold; font-size: 18px; margin-bottom: 20px; }
 
-        .signature { 
-            color: #be185d; 
-            font-weight: bold; 
-            font-size: 18px; 
-            margin-bottom: 20px;
-        }
-
-        /* Contenedor de música de Spotify */
-        .music-box {
-            margin-top: 25px;
-            border-radius: 12px;
+        /* Contenedor del Video de YouTube */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            background: #000;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         .instruction {
-            font-size: 11px;
+            font-size: 12px;
             color: #db2777;
-            margin-top: 8px;
+            margin-top: 10px;
             font-family: sans-serif;
         }
     </style>
@@ -113,18 +106,15 @@
         <h1>¡Feliz Cumpleaños, Emelyn! 🎂</h1>
         <p class="signature">Te amo hoy y siempre. ❤️</p>
 
-        <div class="music-box">
-            <iframe style="border-radius:12px" 
-                src="https://open.spotify.com/embed/track/6E6tP376hLz488zYnS5Pnt?utm_source=generator" 
-                width="100%" 
-                height="152" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/uZO-P4ukFxE" 
+                title="Gone, Gone, Gone - Phillip Phillips" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
             </iframe>
         </div>
-        <p class="instruction">🎵 Dale play arriba para que empiece nuestra canción ✨</p>
+        <p class="instruction">🎵 Dale play al video para escuchar nuestra canción ✨</p>
     </div>
 
 </body>
