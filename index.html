@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para Emelyn ❤️</title>
     <style>
+        /* Estilos generales y colores */
         body {
-            background: #fff5f7;
+            background: #fff5f7; /* Fondo rosado muy suave */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,6 +17,8 @@
             text-align: center;
             padding: 20px;
         }
+
+        /* La tarjeta de felicitación */
         .card {
             background: white;
             padding: 30px;
@@ -23,30 +26,66 @@
             box-shadow: 0 15px 35px rgba(251, 182, 206, 0.6);
             max-width: 450px;
             border: 2px solid #f9a8d4;
+            position: relative;
         }
-        .tulips { font-size: 50px; margin-bottom: 20px; }
+
+        /* Tulipanes animados */
+        .tulips { 
+            font-size: 50px; 
+            margin-bottom: 20px; 
+        }
+
+        .tulip-anim { 
+            display: inline-block; 
+            animation: sway 2.5s infinite ease-in-out; 
+        }
+
+        @keyframes sway { 
+            0%, 100% { transform: translateY(0) rotate(-5deg); } 
+            50% { transform: translateY(-15px) rotate(5deg); } 
+        }
+
+        /* El poema */
         .poem { 
             font-style: italic; 
             color: #4b5563; 
             line-height: 1.8; 
             font-size: 16px;
             background: #fffafb;
-            padding: 15px;
+            padding: 20px;
             border-radius: 15px;
-        }
-        h1 { color: #db2777; font-family: 'Arial', sans-serif; font-size: 24px; margin-top: 20px; }
-        .signature { color: #be185d; font-weight: bold; font-size: 18px; margin-top: 10px; }
-        
-        /* Contenedor del video/música */
-        .video-container {
-            margin-top: 25px;
-            border-radius: 15px;
-            overflow: hidden;
-            border: 1px solid #fbcfe8;
+            border-left: 4px solid #f9a8d4;
+            margin-bottom: 20px;
         }
 
-        .tulip-anim { display: inline-block; animation: sway 2.5s infinite ease-in-out; }
-        @keyframes sway { 0%, 100% { transform: translateY(0) rotate(-5deg); } 50% { transform: translateY(-15px) rotate(5deg); } }
+        h1 { 
+            color: #db2777; 
+            font-family: 'Arial', sans-serif; 
+            font-size: 24px; 
+            margin: 15px 0; 
+        }
+
+        .signature { 
+            color: #be185d; 
+            font-weight: bold; 
+            font-size: 18px; 
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor de música de Spotify */
+        .music-box {
+            margin-top: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .instruction {
+            font-size: 11px;
+            color: #db2777;
+            margin-top: 8px;
+            font-family: sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -74,10 +113,18 @@
         <h1>¡Feliz Cumpleaños, Emelyn! 🎂</h1>
         <p class="signature">Te amo hoy y siempre. ❤️</p>
 
-        <div class="video-container">
-            <iframe width="100%" height="80" src="https://www.youtube.com/embed/oozQ4yV0enI?autoplay=1" title="Gone, Gone, Gone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p style="font-size: 10px; color: #999; margin: 5px;">Presiona Play si no inicia sola ✨</p>
+        <div class="music-box">
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/track/6E6tP376hLz488zYnS5Pnt?utm_source=generator" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
         </div>
+        <p class="instruction">🎵 Dale play arriba para que empiece nuestra canción ✨</p>
     </div>
 
 </body>
